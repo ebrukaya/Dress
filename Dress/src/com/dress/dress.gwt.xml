@@ -1,0 +1,12 @@
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.0//EN"
+        "http://google-web-toolkit.googlecode.com/svn/releases/2.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to="dress">
+
+   <inherits name="com.google.gwt.user.User"/>
+	<inherits name="com.google.gwt.user.theme.standard.Standard"/>
+	<inherits name='org.vaadin.gwtgraphics.GWTGraphics' />
+	 <inherits name="com.smartgwt.SmartGwt"/>
+    <inherits name="com.reveregroup.gwt.imagepreloader.ImagePreloader"/>
+    <entry-point class="com.dress.client.Dress"/>
+
+</module>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true">
+	<output-test url="file://$MODULE_DIR$/out/test/Dress"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="$MODULE_DIR$/lib/gwt-graphics-0.9.7.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/gwt-graphics-0.9.7.jar!/"/>
+	</lib>
+	<lib name="$MODULE_DIR$/lib/smartgwt-skins.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/smartgwt-skins.jar!/"/>
+	</lib>
+	<lib name="$MODULE_DIR$/lib/gwt-servlet.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/gwt-servlet.jar!/"/>
+	</lib>
+	<lib name="$MODULE_DIR$/lib/smartgwt.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/smartgwt.jar!/"/>
+	</lib>
+	<lib name="$MODULE_DIR$/lib/myfirstgwt.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/myfirstgwt.jar!/"/>
+	</lib>
+</component>

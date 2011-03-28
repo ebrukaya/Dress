@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="WebFXJS:war exploded2">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebFXJS_war_exploded2</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="WebFXJS/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="WebFXJS" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/../../gwt-2.2.0/gwt-servlet.jar" />
+        </element>
+      </element>
+      <element id="gwt-compiler-output" facet="WebFXJS/gwt/GWT" />
+    </root>
+  </artifact>
+</component>

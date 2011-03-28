@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/Dress/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/gwt-user"/>
+	<classpathentry kind="lib" path="/Dress/lib/gwt-graphics-0.9.7.jar"/>
+	<classpathentry kind="lib" path="/Dress/lib/smartgwt-skins.jar"/>
+	<classpathentry kind="lib" path="/Dress/lib/gwt-servlet.jar"/>
+	<classpathentry kind="lib" path="/Dress/lib/smartgwt.jar"/>
+	<classpathentry kind="lib" path="/Dress/lib/myfirstgwt.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

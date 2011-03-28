@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="gwt-user">
+    <archive path="/home/ebru/gwt-2.2.0/gwt-user.jar" />
+  </library>
+</eclipse-userlibraries>
+

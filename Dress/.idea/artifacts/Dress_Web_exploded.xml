@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="Dress:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Dress_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Dress/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="javaee-facet-classes" facet="Dress/web/Web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/lib/gwt-graphics-0.9.7.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/smartgwt-skins.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/gwt-servlet.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/smartgwt.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/lib/myfirstgwt.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

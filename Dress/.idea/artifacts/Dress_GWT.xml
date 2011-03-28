@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="Dress:GWT">
+    <output-path>$PROJECT_DIR$/war</output-path>
+    <root id="root">
+      <element id="gwt-compiler-output" facet="Dress/gwt/GWT" />
+    </root>
+  </artifact>
+</component>

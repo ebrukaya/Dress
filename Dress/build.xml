@@ -1,0 +1,57 @@
+<project basedir="." default="build" name="dress">
+ <target name="build" depends="compile, compileJs">
+                <antcall target="buildLibs" />
+                <antcall target="buildWar" />
+        </target>
+        <target name="buildWar" depends="buildLibs">
+                <antcall target="cleanDebug" />
+                <mkdir dir="${milestone.dir}" />
+                <copy todir="${build.dir}/tmp.web-inf-lib" flatten="true">
+                        <fileset dir="${cm-assemblies.lib.dir}"
+excludes="**/*-javadocs.jar">
+                                <include name="gems-gwt-user/gems-gwt-rpc-1.0.21.jar"/>
+                                <include name="gems/gems-svc-api.jar"/>
+                                <include name="gems/gems-server.jar"/>
+                                <include name="log4j/log4j-1.2.8.jar"/>
+                                <include name="commons-fileupload/commons-fileupload-1.1-RC2.jar"/>
+                                <include name="commons-io/commons-io-1.2.jar"/>
+                                <include name="commons-lang/commons-lang-2.1-RC8.jar"/>
+                        </fileset>
+                </copy>
+                <war warfile="${milestone.dir}/${war.name}" webxml="${web.xml}">
+                        <fileset dir="${webapp.dir}" />
+                        <lib dir="${build.dir}/tmp.web-inf-lib" />
+                        <lib dir="${libs.dir}" />
+                </war>
+                <delete includeEmptyDirs="true" failonerror="false">
+                        <fileset dir="${build.dir}/tmp.web-inf-lib" />
+                </delete>
+        </target>
+    <target name="compileJs" depends="compile, cleanForJs">
+        <copy todir="${webapp.dir}/${gwt-xml-ep.name}">
+                        <fileset dir="${gem-appl-public.dir}" includes="**/*"/>
+        </copy>
+        <java classpathref="js.build.classpath"
+                classname="com.google.gwt.dev.GWTCompiler"
+                fork="true">
+                <arg value="-out"/>
+                <arg value="${webapp.dir}"/>
+                <arg value="${gwt-xml-ep.name}"/>
+                <!--
+                        Every now and then you will need uncomment the following to be
+able
+                        to debug FF in Venkman to remove a gwt-user-lib bug that only
+                        manifests itself in non IE browsers.
+                    <arg value="-style"/>
+                    <arg value="DETAILED"/>
+                -->
+        </java>
+        <move todir="${webapp.dir}">
+                        <fileset dir="${webapp.dir}/${gwt-xml-ep.name}">
+                                <include name="jump.css"/>
+                                <include name="images/**" />
+                        </fileset>
+        </move>
+    </target>
+
+</project>

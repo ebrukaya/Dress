@@ -172,8 +172,6 @@ public class DrawingAreaListener implements
 					.getImage().getX() + handler.getImage().getWidth()/2 - 10,
 					handler.getImage().getY() + 5
 							, 40, 40);
-
-
             if (resizeStarted_)
             {
                 handler.getImage().getElement().getStyle().setCursor(Style.Cursor.CROSSHAIR);
